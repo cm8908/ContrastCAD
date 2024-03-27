@@ -108,7 +108,6 @@ class ConfigCL(object):
 
         parser.add_argument('--fp32', dest='fp16', action='store_false', default=True)
         parser.add_argument('--latent_dropout', type=float, default=0.3)
-        parser.add_argument('--cl_loss', type=str, default='simclr', choices=['infonce', 'simclr'])
         parser.add_argument('--n_phead_layers', type=int, default=1)
         parser.add_argument('--phead_type', type=str, default='multilayer', choices=['multilayer', 'legacy'])
         if not self.is_train:
