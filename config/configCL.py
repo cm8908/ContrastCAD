@@ -106,7 +106,6 @@ class ConfigCL(object):
         parser.add_argument('--dataset_augment_type', type=str, default='default', choices=['default', 're-extrude', 'replace', 'redraw', 'corrupt2', 'replace_arc', 'replace_p_arc', 'replace_arc2', 'replace_p_arc2', 'arc', 'arc2', 'rre'])
         parser.add_argument('--dataset_augment_prob', type=float, default=0.5)
 
-        parser.add_argument('--dataset_type', type=str, default='default', choices=['default', 'clean', 'arc'])
         parser.add_argument('--fp32', dest='fp16', action='store_false', default=True)
         parser.add_argument('--latent_dropout', type=float, default=0.3)
         parser.add_argument('--cl_loss', type=str, default='simclr', choices=['infonce', 'simclr'])
