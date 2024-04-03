@@ -40,4 +40,11 @@ python test_cl.py --exp_name pretrained --mode rec --ckpt {epoch-number-here} -g
 
 ## Citation
 ```
-@article{not ready yet}
+@article{jung2024contrastcad,
+      title={ContrastCAD: Contrastive Learning-based Representation Learning for Computer-Aided Design Models}, 
+      author={Jung, Minseop and Kim, Minseong and Kim, Jibum},
+      year={2024},
+      eprint={2404.01645},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
