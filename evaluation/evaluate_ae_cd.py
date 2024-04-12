@@ -17,7 +17,7 @@ from tqdm import tqdm
 from cadlib.visualize import vec2CADsolid, CADsolid2pc
 
 
-PC_ROOT = "../../datasets/cad_data/pc_cad"
+PC_ROOT = "data/pc_cad"
 # data that is unable to process
 SKIP_DATA = [""]
 

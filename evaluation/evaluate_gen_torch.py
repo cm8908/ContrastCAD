@@ -18,8 +18,8 @@ N_POINTS = 2000
 
 random.seed(1234)
 
-PC_ROOT = "../../datasets/cad_data/pc_cad"
-RECORD_FILE = "../../datasets/cad_data/train_val_test_split.json"
+PC_ROOT = "data/pc_cad"
+RECORD_FILE = "data/train_val_test_split.json"
 
 
 def distChamfer(a, b):

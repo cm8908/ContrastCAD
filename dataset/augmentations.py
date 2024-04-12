@@ -98,14 +98,14 @@ def replace_extrusion(command, args):
         command_aug, args_aug = re_extrude(command, args)
     return command_aug, args_aug
 
-with open('../datasets/cad_data/train_val_test_split.json', 'r') as fp:
+with open('data/train_val_test_split.json', 'r') as fp:
     all_data = json.load(fp)['train']
 def _replace(command: np.ndarray, args: np.ndarray, ext_indices: np.ndarray):
     cad_vec = np.hstack([command[:,np.newaxis], args])
     ext_vec1 = np.split(cad_vec, ext_indices + 1, axis=0)[:-1]
 
     data_id2 = all_data[random.randint(0, len(all_data) - 1)]
-    h5_path2 = os.path.join('../datasets/cad_data/cad_vec', data_id2 + ".h5")
+    h5_path2 = os.path.join('data/cad_vec', data_id2 + ".h5")
     with h5py.File(h5_path2, "r") as fp:
         cad_vec2 = fp["vec"][:]
     command2 = cad_vec2[:, 0]
@@ -151,7 +151,7 @@ def attach(command, args):
     ext_vec = np.split(cad_vec, ext_indices + 1, axis=0)[:-1]
     
     data_id2 = all_data[random.randint(0, len(all_data) - 1)]
-    h5_path2 = os.path.join('../datasets/cad_data/cad_vec', data_id2 + ".h5")
+    h5_path2 = os.path.join('data/cad_vec', data_id2 + ".h5")
     with h5py.File(h5_path2, "r") as fp:
         cad_vec2 = fp["vec"][:]
     command2 = cad_vec2[:, 0]
@@ -238,7 +238,7 @@ def reorder(command, args):
 def insert(command, args, p=None):
     def get_random_token():
         data_id2 = all_data[random.randint(0, len(all_data) - 1)]
-        h5_path2 = os.path.join('../datasets/cad_data/cad_vec', data_id2 + ".h5")
+        h5_path2 = os.path.join('data/cad_vec', data_id2 + ".h5")
         with h5py.File(h5_path2, "r") as fp:
             cad_vec2 = fp["vec"][:]
         command2 = cad_vec2[:, 0]

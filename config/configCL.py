@@ -82,7 +82,7 @@ class ConfigCL(object):
         parser = argparse.ArgumentParser()
         parser.add_argument('--random_seed', type=int, default=2023)
         parser.add_argument('--proj_dir', type=str, default="proj_log", help="path to project folder where models and logs will be saved")
-        parser.add_argument('--data_root', type=str, default="../datasets/cad_data/", help="path to source data folder")
+        parser.add_argument('--data_root', type=str, default="data", help="path to source data folder")
         parser.add_argument('--cmd_weight', type=float, default=1.0)
         parser.add_argument('--args_weight', type=float, default=2.0)
         parser.add_argument('--exp_name', type=str, default=os.getcwd().split('/')[-1], help="name of this experiment")

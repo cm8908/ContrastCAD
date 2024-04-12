@@ -14,7 +14,7 @@ from cadlib.macro import *
 
 np.random.seed(2024)
 torch.manual_seed(2024)
-data_dir = '../../datasets/cad_data'
+data_dir = 'data'
 
 def pad(cad_vec):
     pad_len = MAX_TOTAL_LEN - cad_vec.shape[0]
