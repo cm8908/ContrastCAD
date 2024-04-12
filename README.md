@@ -1,6 +1,6 @@
 # ContrastCAD
 
-Official python implementation for the paper: [Contrastive Learning-based Representation Learning for Computer-Aided Design Models]()
+Official python implementation for the paper: [Contrastive Learning-based Representation Learning for Computer-Aided Design Models](https://arxiv.org/abs/2404.01645)
 
 ## Training Example
 You can start training ContrastCAD with desired number of epoch by running below command (-g 0 is for GPU id):
