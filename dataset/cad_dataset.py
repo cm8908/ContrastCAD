@@ -6,7 +6,7 @@ import h5py
 import random
 import _pickle as pickle
 from cadlib.macro import *
-from dataset.augmentations import augment, dataset_augment
+from dataset.augmentations import dataset_augment
 
 
 def get_dataloader(phase, config, shuffle=None):

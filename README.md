@@ -33,7 +33,7 @@ python evaluate_ae_acc.py --src ../proj_log/contrastcad/results/test_{epoch_numb
 python evaluate_ae_cd.py --src ../proj_log/contrastcad/results/test_{epoch_number-here} --parallel
 ```
 
-If you would like to used our pretrained checkpoints, simply replace `exp_name` arguemtn with `pretrained` such as :
+If you would like to use our pretrained checkpoints, simply replace `exp_name` arguemtn with `pretrained` such as :
 ```
 python test_cl.py --exp_name pretrained --mode rec --ckpt {epoch-number-here} -g 0
 ```
