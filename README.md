@@ -37,6 +37,8 @@ If you would like to used our pretrained checkpoints, simply replace `exp_name` 
 ```
 python test_cl.py --exp_name pretrained --mode rec --ckpt {epoch-number-here} -g 0
 ```
+## Dataset
+For dataset, please refer to [DeepCAD](https://github.com/ChrisWu1997/DeepCAD) repository. Download dataset and unzip them into `data` directory (or whatever directory name you specify).
 
 ## Citation
 ```
