@@ -2,17 +2,17 @@ from collections import OrderedDict
 from tqdm import tqdm
 import argparse
 from dataset.cad_dataset import get_dataloader
-from config import ConfigCL
+from config import ConfigAE
 from utils import cycle
-from trainer import TrainerCL
+from trainer import TrainerAE
 
 
 def main():
     # create experiment cfg containing all hyperparameters
-    cfg = ConfigCL('train')
+    cfg = ConfigAE('train')
 
     # create network and training agent
-    tr_agent = TrainerCL(cfg)
+    tr_agent = TrainerAE(cfg)
 
     # load from checkpoint if provided
     if cfg.cont:
