@@ -2,6 +2,8 @@
 
 Official python implementation for the paper: [Contrastive Learning-based Representation Learning for Computer-Aided Design Models](https://arxiv.org/abs/2404.01645)
 
+(Updated 04-30-2024) Now you can use [Docker](https://hub.docker.com/repository/docker/fmsjung/contrastcad/) to train & test our model, without installing all the dependencies locally, by running: ```docker run --gpus all -it --rm fmsjung/contrastcad```
+
 ## Training Example
 You can start training ContrastCAD with desired number of epoch by running below command (-g 0 is for GPU id):
 ```
