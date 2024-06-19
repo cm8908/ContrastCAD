@@ -1,6 +1,6 @@
 # ContrastCAD
 
-Official python implementation for the paper: [Contrastive Learning-based Representation Learning for Computer-Aided Design Models](https://arxiv.org/abs/2404.01645)
+Official python implementation for the paper: [Contrastive Learning-based Representation Learning for Computer-Aided Design Models](https://ieeexplore.ieee.org/document/10559801)
 
 (Updated 04-30-2024) Now you can use [Docker](https://hub.docker.com/r/fmsjung/contrastcad/) to train & test our model, without installing all the dependencies locally, by running: ```docker run --gpus all -it --rm fmsjung/contrastcad```
 
@@ -44,11 +44,14 @@ For dataset, please refer to [DeepCAD](https://github.com/ChrisWu1997/DeepCAD) r
 
 ## Citation
 ```
-@article{jung2024contrastcad,
-      title={ContrastCAD: Contrastive Learning-based Representation Learning for Computer-Aided Design Models}, 
-      author={Jung, Minseop and Kim, Minseong and Kim, Jibum},
-      year={2024},
-      eprint={2404.01645},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@ARTICLE{10559801,
+  author={Jung, Minseop and Kim, Minseong and Kim, Jibum},
+  journal={IEEE Access}, 
+  title={ContrastCAD: Contrastive Learning-based Representation Learning for Computer-Aided Design Models}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Solid modeling;Shape measurement;Computational modeling;Data models;Training;Three-dimensional displays;Transformers;Design automation;Contrastive learning;CAD model;Transformer autoencoder;CAD generation},
+  doi={10.1109/ACCESS.2024.3415816}}
+
