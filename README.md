@@ -47,11 +47,12 @@ For dataset, please refer to [DeepCAD](https://github.com/ChrisWu1997/DeepCAD) r
 @ARTICLE{10559801,
   author={Jung, Minseop and Kim, Minseong and Kim, Jibum},
   journal={IEEE Access}, 
-  title={ContrastCAD: Contrastive Learning-based Representation Learning for Computer-Aided Design Models}, 
+  title={ContrastCAD: Contrastive Learning-Based Representation Learning for Computer-Aided Design Models}, 
   year={2024},
-  volume={},
+  volume={12},
   number={},
-  pages={1-1},
-  keywords={Solid modeling;Shape measurement;Computational modeling;Data models;Training;Three-dimensional displays;Transformers;Design automation;Contrastive learning;CAD model;Transformer autoencoder;CAD generation},
+  pages={84830-84842},
+  keywords={Solid modeling;Shape measurement;Computational modeling;Data models;Training;Three-dimensional displays;Transformers;Design automation;Contrastive learning;CAD model;transformer autoencoder;CAD generation},
   doi={10.1109/ACCESS.2024.3415816}}
+
 
